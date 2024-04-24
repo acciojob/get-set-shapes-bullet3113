@@ -1,6 +1,6 @@
 //complete this code
 class Rectangle {
-	Constructor(width, height) {
+	constructor(width, height) {
 		this.width = width;
 		this.height = height;
 	}
@@ -16,7 +16,7 @@ class Rectangle {
 }
 
 class Square extends Rectangle {
-	Constructor(side) {
+	constructor(side) {
 		this.side = side;
 	}
 	getPerimeter() {return this.side * 4;}
