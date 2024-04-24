@@ -5,21 +5,19 @@ class Rectangle {
 		this.height = height;
 	}
 
-	getWidth() {return this.width;}
-	getheight() {return this.height;}
+	get width() {return this.width;}
+	get height() {return this.height;}
 
-	setWidth(width) {this.width = width;}
-	setheight(height) {this.height = height;}
+	set width(width) {this.width = width;}
+	set height(height) {this.height = height;}
 
 	getArea() {return this.width * this.height;}
 
 }
 
 class Square extends Rectangle {
-	super();
-	constructor(side) {
-		this.side = side;
-	}
+	super(side, side);
+	
 	getPerimeter() {return this.side * 4;}
 }
 
